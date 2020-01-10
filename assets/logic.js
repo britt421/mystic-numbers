@@ -18,12 +18,12 @@ function getMysticResult(){
     if(mysticResult.length < 3){
         for(var i = 0; i < 3; i++){
             var randomNumber = Math.floor(Math.random() * numbers.length);
-            mysticResult.push(randomNumber); 
+            mysticResult.push(randomNumber);
         }
         
         console.log(mysticResult);
     
-        document.getElementById("mysticResult").innerHTML = mysticResult;
+        document.getElementById("mysticResult").innerHTML = mysticResult.join(" ");
 
     } else {
         clearResult();
@@ -33,5 +33,5 @@ function getMysticResult(){
     
 }
 
-getMysticResult();
+// getMysticResult();
 
