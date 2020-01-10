@@ -6,7 +6,7 @@ var mysticResult = [0, 1, 2];
 function getRandom(arr) {
     var randomNumber = Math.floor(Math.random() * arr.length);
     console.log(randomNumber);
-    // document.getElementById("fortune").innerHTML = randomNumber
+    document.getElementById("mysticResult").innerHTML = randomNumber
   }
 
 getRandom(numbers);
