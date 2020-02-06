@@ -7,32 +7,71 @@
     <title>Mystic Number</title>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/logic.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css"></link>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <h1>Mystic Numbers</h1>
-    <h3>a fortune-telling slot machine</h3>
 
-    <div>
-        <h3>Your Number is: </h3>
-        <div class="card-body">
-            <textarea name="mysticNumer" id= "mysticResult" placeholder="Your Mystic Number">
-            </textarea>
+    <div class="container is-fluid">
+        <div class="notification">
+            <section class="hero">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="title">
+                      Mystic Numbers
+                    </h1>
+                    <h2 class="subtitle">
+                      a fortune-telling slot machine
+                    </h2>
+                  </div>
+                </div>
+            </section>
+
+            <div>
+                <h3>Your Number is: </h3>
+                <div class="card-body">
+                    <textarea name="mysticNumer" id= "mysticResult" placeholder="Your Mystic Number">
+                    </textarea>
+                </div>
+                <button id="slotBtn" onclick="getMysticResult()">Click Here</button>
+            </div>
+        
+            <div>
+                <textarea name="message-display" id="mysticMessage" cols="30" rows="10"></textarea>
+            </div>
+
         </div>
-        <button id="myBtn" onclick="getMysticResult()">Click Here</button>
-    </div>
+      </div>    
+    
+
+    
+
+    <!-- <button id="myBtn">Open Modal</button> -->
+
 
     <!-- The Modal -->
 
-<button id="myBtn">Open Modal</button>
+    <!-- <div class="modal" id="display-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Your Mystic Number is:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4><span id="DA-match"></span></h4>
+                    <p id="MN-mesage"></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>You're a Lucky Girl!</p>
-    </div>
-</div>
 
-</div>
+    
 
 </body>
 </html>
